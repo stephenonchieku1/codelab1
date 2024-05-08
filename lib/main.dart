@@ -46,6 +46,7 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.brown,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('A random idea: by steve'),
           BigCard(pair: pair),
