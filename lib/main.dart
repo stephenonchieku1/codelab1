@@ -45,17 +45,20 @@ class MyHomePage extends StatelessWidget {
         title: Text('codelab!!!'),
         backgroundColor: Colors.brown,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text('A random idea: by steve'),
-          BigCard(pair: pair),
-          ElevatedButton(
-              onPressed: () {
-                appState.getNext();
-              },
-              child: Text("Next")),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('A random idea: by steve'),
+            BigCard(pair: pair),
+            SizedBox(height: 10),
+            ElevatedButton(
+                onPressed: () {
+                  appState.getNext();
+                },
+                child: Text("Next")),
+          ],
+        ),
       ),
     );
   }
