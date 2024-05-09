@@ -1,6 +1,7 @@
 import 'package:codelab1/contact.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+// ignore: unnecessary_import
 import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 
@@ -88,10 +89,8 @@ class _MyHomePageState extends State<MyHomePage> {
     switch (selectedIndex) {
       case 0:
         page = GeneratorPage();
-        break;
       case 1:
         page = Placeholder();
-        break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }
